@@ -1,6 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
+import AboutMe from './Components/AboutMe';
+import david from './david.jpg';
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         </p>
       </header> */}
       <Header />
+      <img src={david} className="App-logo" alt="Headshot Photo" />
+
+      <AboutMe />
+      
 
     </div> 
 

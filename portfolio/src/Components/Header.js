@@ -1,9 +1,10 @@
 import React from 'react';
 import '../CSS/Header.css';
+import '../CSS/Common.css';
 
 function Header() {
   return (
-    <header className="header-background">
+    <header className="header-background fadeInUp-animation">
       <div className="header-content">
         <nav>
           <ul className="nav-list">
