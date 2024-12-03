@@ -1,0 +1,32 @@
+.profile-picture {
+    height: 40vmin;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: profile-picture-spin 2.5s cubic-bezier(0.42, 0, 0.58, 1) 1;
+}
+
+@keyframes profile-picture-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* two columns */
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vh;
+    width: 80%;
+}
