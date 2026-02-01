@@ -1,16 +1,19 @@
 import './App.css';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
+import Hidden from './Components/Hidden';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="main-container">      
-      <Header />
-
-
-      <AboutMe />
-    </div> 
-
+    <Router>
+      <div className="main-container">      
+        <Routes>
+          <Route path="/" element={<><Header /><AboutMe /></>} />
+          <Route path="/hidden" element={<Hidden />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
