@@ -7,12 +7,6 @@
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?p=/one/two&a=b~&c=d#qwe
-      // See https://github.com/rafgraph/spa-github-pages#usage for all available options
       (function(l) {
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
@@ -26,8 +20,5 @@
     </script>
   </head>
   <body>
-    <script>
-      window.location.href = '/portfolio' + window.location.pathname + window.location.search + window.location.hash;
-    </script>
   </body>
 </html>
