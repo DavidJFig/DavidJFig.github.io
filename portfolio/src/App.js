@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
 import Hidden from './Components/Hidden';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
